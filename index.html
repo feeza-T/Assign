@@ -59,12 +59,12 @@
                     <li class="hover:text-black transition-colors duration-300 ease-in-out"><a>Contact Us</a></li>
                 </ul>
             </div>
-            <div class="navbar-end flex  ">
-                <i class="fa-solid fa-magnifying-glass text-black bg-gray-200 h-6 w-6 pt-1 sm:hidden lg:block rounded-full"></i>
+            <div class="navbar-end ">
+                <i class="fa-solid fa-magnifying-glass text-black bg-gray-200 h-6 w-6 pt-1 hidden lg:flex rounded-full"></i>
                 <div class="w-24 rounded-full text-black ml-4">
-                    <i class="fa-solid fa-cart-shopping text-black bg-gray-200 h-6 w-6 pt-1 sm:hidden lg:block rounded-full"></i>
+                    <i class="fa-solid fa-cart-shopping text-black bg-gray-200 h-6 w-6 pt-1 hidden lg:flex rounded-full"></i>
                 </div>
-                <div class=" sm:hidden lg:inline">
+                <div class="hidden lg:flex">
                     <button class="flex items-center justify-center text-black font-bold btn bg-btn-primary-bg p-3">
                         Book Consult
                         <i class="fa-solid fa-arrow-right text-white h-6 w-6 ml-2 rounded-full bg-black-color flex items-center justify-center -rotate-45"></i>
@@ -100,11 +100,12 @@
    <main>
     <!-- liveable page starts here -->
     <section>
-      <div class=" hero-content min-h-screen ">
+      <div class=" hero-content min-h-screen container mx-auto">
         <div class="hero-content flex-col-reverse lg:flex-row-reverse">
-          <img src="assets/Rectangle.png" class="max-w-sm w-full h-full object-cover rounded-lg shadow-2xl" alt="">
+          <img src="assets/Rectangle.png" class="max-w-sm w-full object-cover rounded-lg shadow-2xl ml-20" alt="">
           <div>
             <div class="mt-4 mb-4">
+              <img src="assets/Vector.png" alt=""  class="-ml-10 mb-5 hidden lg:flex">
               <button class="flex items-center bg-white text-gray font-bold text-xl btn rounded-full">
                 <i class="fa-solid fa-arrow-right text-gray h-7 w-7 ml-2 rounded-full flex items-center justify-center"></i>
                 About Us
@@ -150,7 +151,7 @@
           <p class="text-gray p-8">The barn house captivates with its blend of rustic charm and modern sophistication, <br>featuring weathered wood, sleek metal accents.</p>
           
         
-          <div class="ms-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 ">
+          <div class="container mx-auto grid grid-cols-1 p-5 md:grid-cols-2 lg:grid-cols-4 gap-4 ">
               <div class=" bg-pink  shadow-xl text-left p-6 rounded-2xl">
                 <img src="assets/concept.png" alt="">
                 <h1 class="font-bold mt-6 mb-4">Concept</h1>
@@ -178,6 +179,65 @@
          </div>
        </section>
        <!-- work process page  here ends-->
+
+      <!-- Portfolio page starts here -->
+      <section class="bg-white pt-20">
+        <button class="items-center justify-center bg-gray-300 text-gray font-bold text-xl btn rounded-full">
+          <i class="fa-solid fa-arrow-right text-gray h-7 w-7 ml-2 rounded-full flex items-center justify-center"></i>
+          Explore Our Latest Works
+        </button>
+        <h2 class="font-bold text-4xl mt-4">Our Last Portfolio</h2>
+        <p class="text-gray p-8">The barn house captivates with its blend of rustic charm and modern sophistication, <br>featuring weathered wood, sleek metal accents.</p>
+      
+        <div class="container mx-auto grid grid-cols-1 gap-4 md:grid-cols-5 md:grid-rows-2">
+          <!-- First div -->
+          <div class="m-10 bg-white md:flex md:col-span-3">
+            <div class="w-full">
+              <img src="assets/img1.png" alt="" class="">
+            </div>
+            <div class="text-left pl-8">
+              <h2 class="font-bold">Commercial</h2>
+              <p class="text-gray-500">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern.</p>
+              <div class="flex items-center mt-2">
+                <h3 class="font-bold">Read More</h3>
+                <i class="fa-solid fa-arrow-right text-black h-7 w-7 ml-2 rounded-full bg-btn-primary-bg flex items-center justify-center -rotate-45"></i>
+              </div>
+            </div>
+          </div>
+      
+          <!-- 2nd div -->
+          <div class="md:col-span-2 pl-20">
+            <img src="assets/img2.png" alt="" class="pl-10 m-5">
+          </div>
+      
+          <!-- 3rd div -->
+          <div class="pl-10 mt-10">
+            <img src="assets/img3.png" alt="" class="w-full" >
+          </div>
+      
+          <!-- 4th div -->
+          <div class="m-10 bg-white md:flex md:col-span-3">
+            <div>
+              <img src="assets/img4.png" alt="" class="w-full h-auto">
+            </div>
+            <div class="text-left p-4">
+              <h2 class="font-bold">Showcase</h2>
+              <p class="text-gray-500">Explore our portfolio to see a showcase of our most stunning and diverse projects.</p>
+              <div class="flex items-center mt-2">
+                <h3 class="font-bold">Read More</h3>
+                <i class="fa-solid fa-arrow-right text-black h-7 w-7 ml-2 rounded-full bg-btn-primary-bg flex items-center justify-center -rotate-45"></i>
+              </div>
+            </div>
+          </div>
+      
+          <!-- 5th div -->
+          <div class="pr-5 mt-10">
+            <img src="assets/img5.png" alt="" class="w-full h-auto">
+          </div>
+        </div>
+      </section>
+      
+      <!-- Portfolio page ends here -->
 
        <!-- Article page starts here -->
         <section class="bg-base-300 pt-20 pb-20 m-20">
@@ -315,6 +375,7 @@
           </div>
 
          </section>
+        <!-- unique/Reviews Section ends here -->
 
         <!-- form page starst here -->
         <section style="background-image: url('assets/bg.jpg'); background-size: cover; background-position: center;" class="pt-20 pb-20">
